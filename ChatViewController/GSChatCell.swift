@@ -26,7 +26,7 @@ class GSChatCell: UITableViewCell {
     }
     
     class func cellFixedComponentsHeight() -> CGFloat {
-        return (16+16+14) //margin, margin, labelDate
+        return (10+28) //padding+labelDate
     }
     
     class func defaultFont() -> UIFont {

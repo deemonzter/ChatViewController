@@ -144,7 +144,6 @@ extension ChatVC {
             }
             
             message.text = LoremIpsum.words(withNumber: words)
-            print("words: \(message.text)")
             array.append(message)
         }
         
@@ -667,44 +666,37 @@ extension ChatVC {
         
         if tableView == self.tableView {
             let message = self.messages[(indexPath as NSIndexPath).row]
-            
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.lineBreakMode = .byWordWrapping
-            paragraphStyle.alignment = .left
-            
-            //            let pointSize = MessageTableViewCell.defaultFontSize()
-            
-            let attributes = [
-                //                NSFontAttributeName : UIFont.systemFont(ofSize: pointSize),
-                NSFontAttributeName : GSChatCell.defaultFont(),
-                NSParagraphStyleAttributeName : paragraphStyle
-            ]
-            
-            //            var width = tableView.frame.width-kMessageTableViewCellAvatarHeight
-            //            width -= 25.0
-            
             let width = (tableView.frame.width * 0.8) - (20+20)
+            var bodyBounds = CGSize.zero
             
-            //            let titleBounds = (message.username as NSString).boundingRect(with: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-            let bodyBounds = (message.text as NSString).boundingRect(with: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+            // approach that didn't work...
+//            let paragraphStyle = NSMutableParagraphStyle()
+//            paragraphStyle.lineBreakMode = .byWordWrapping
+//            
+//            if message.isUser {
+//                paragraphStyle.alignment = .right
+//            } else {
+//                paragraphStyle.alignment = .left
+//            }
+//            let attributes = [
+//                NSFontAttributeName : GSChatCell.defaultFont(),
+//                NSParagraphStyleAttributeName : paragraphStyle
+//            ]
+//            bodyBounds = (message.text as NSString).boundingRect(with: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
             
-            if message.text.characters.count == 0 {
-                return 0
-            }
+            // approach that worked...
+            let textView = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
+            textView.font = GSChatCell.defaultFont()
+            textView.text = message.text
+            textView.sizeToFit()
+            bodyBounds = textView.contentSize
             
-            //            var height = titleBounds.height
-            //            height += bodyBounds.height
             var height = bodyBounds.height
             height += GSChatCell.cellFixedComponentsHeight()
-            
-            //            if height < kMessageTableViewCellMinimumHeight {
-            //                height = kMessageTableViewCellMinimumHeight
-            //            }
             
             return height
         }
         else {
-            //            return kMessageTableViewCellMinimumHeight
             return 0
         }
     }
