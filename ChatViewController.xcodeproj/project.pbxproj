@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A907DEF1F32CDF700DF370E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A907DEE1F32CDF700DF370E /* AppDelegate.swift */; };
+		2A907DF11F32CDF700DF370E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A907DF01F32CDF700DF370E /* ViewController.swift */; };
+		2A907DF41F32CDF700DF370E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A907DF21F32CDF700DF370E /* Main.storyboard */; };
+		2A907DF61F32CDF700DF370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A907DF51F32CDF700DF370E /* Assets.xcassets */; };
+		2A907DF91F32CDF700DF370E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A907DF71F32CDF700DF370E /* LaunchScreen.storyboard */; };
+		2A907E1B1F32CE8A00DF370E /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E021F32CE8A00DF370E /* SLKInputAccessoryView.m */; };
+		2A907E1C1F32CE8A00DF370E /* SLKTextInput+Implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E041F32CE8A00DF370E /* SLKTextInput+Implementation.m */; };
+		2A907E1D1F32CE8A00DF370E /* SLKTextInputbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E061F32CE8A00DF370E /* SLKTextInputbar.m */; };
+		2A907E1E1F32CE8A00DF370E /* SLKTextInputBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E081F32CE8A00DF370E /* SLKTextInputBarConfiguration.m */; };
+		2A907E1F1F32CE8A00DF370E /* SLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E0A1F32CE8A00DF370E /* SLKTextView.m */; };
+		2A907E201F32CE8A00DF370E /* SLKTextView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E0C1F32CE8A00DF370E /* SLKTextView+SLKAdditions.m */; };
+		2A907E211F32CE8A00DF370E /* SLKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E0E1F32CE8A00DF370E /* SLKTextViewController.m */; };
+		2A907E221F32CE8A00DF370E /* SLKTextViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E101F32CE8A00DF370E /* SLKTextViewControllerConfiguration.m */; };
+		2A907E231F32CE8A00DF370E /* SLKTypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E131F32CE8A00DF370E /* SLKTypingIndicatorView.m */; };
+		2A907E241F32CE8A00DF370E /* UIResponder+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E161F32CE8A00DF370E /* UIResponder+SLKAdditions.m */; };
+		2A907E251F32CE8A00DF370E /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E181F32CE8A00DF370E /* UIScrollView+SLKAdditions.m */; };
+		2A907E261F32CE8A00DF370E /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E1A1F32CE8A00DF370E /* UIView+SLKAdditions.m */; };
+		2A907E2A1F32CF7E00DF370E /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E291F32CF7E00DF370E /* ChatVC.swift */; };
+		2A907E321F32D06E00DF370E /* GSChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E301F32D06E00DF370E /* GSChatCell.swift */; };
+		2A907E331F32D06E00DF370E /* GSChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A907E311F32D06E00DF370E /* GSChatCell.xib */; };
+		2A907E4F1F32D89E00DF370E /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E471F32D89E00DF370E /* Message.m */; };
+		2A907E501F32D89E00DF370E /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E491F32D89E00DF370E /* MessageTableViewCell.m */; };
+		2A907E511F32D89E00DF370E /* MessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E4B1F32D89E00DF370E /* MessageTextView.m */; };
+		2A907E521F32D89F00DF370E /* TypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E4E1F32D89E00DF370E /* TypingIndicatorView.m */; };
+		2A907E551F32D8A800DF370E /* LoremIpsum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A907E541F32D8A800DF370E /* LoremIpsum.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A907DEB1F32CDF700DF370E /* ChatViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A907DEE1F32CDF700DF370E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A907DF01F32CDF700DF370E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A907DF31F32CDF700DF370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A907DF51F32CDF700DF370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A907DF81F32CDF700DF370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A907DFA1F32CDF700DF370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A907E001F32CE8A00DF370E /* ChatViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A907E011F32CE8A00DF370E /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKInputAccessoryView.h; sourceTree = "<group>"; };
+		2A907E021F32CE8A00DF370E /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKInputAccessoryView.m; sourceTree = "<group>"; };
+		2A907E031F32CE8A00DF370E /* SLKTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInput.h; sourceTree = "<group>"; };
+		2A907E041F32CE8A00DF370E /* SLKTextInput+Implementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLKTextInput+Implementation.m"; sourceTree = "<group>"; };
+		2A907E051F32CE8A00DF370E /* SLKTextInputbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInputbar.h; sourceTree = "<group>"; };
+		2A907E061F32CE8A00DF370E /* SLKTextInputbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextInputbar.m; sourceTree = "<group>"; };
+		2A907E071F32CE8A00DF370E /* SLKTextInputBarConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInputBarConfiguration.h; sourceTree = "<group>"; };
+		2A907E081F32CE8A00DF370E /* SLKTextInputBarConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextInputBarConfiguration.m; sourceTree = "<group>"; };
+		2A907E091F32CE8A00DF370E /* SLKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextView.h; sourceTree = "<group>"; };
+		2A907E0A1F32CE8A00DF370E /* SLKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextView.m; sourceTree = "<group>"; };
+		2A907E0B1F32CE8A00DF370E /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2A907E0C1F32CE8A00DF370E /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2A907E0D1F32CE8A00DF370E /* SLKTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextViewController.h; sourceTree = "<group>"; };
+		2A907E0E1F32CE8A00DF370E /* SLKTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextViewController.m; sourceTree = "<group>"; };
+		2A907E0F1F32CE8A00DF370E /* SLKTextViewControllerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextViewControllerConfiguration.h; sourceTree = "<group>"; };
+		2A907E101F32CE8A00DF370E /* SLKTextViewControllerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextViewControllerConfiguration.m; sourceTree = "<group>"; };
+		2A907E111F32CE8A00DF370E /* SLKTypingIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTypingIndicatorProtocol.h; sourceTree = "<group>"; };
+		2A907E121F32CE8A00DF370E /* SLKTypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTypingIndicatorView.h; sourceTree = "<group>"; };
+		2A907E131F32CE8A00DF370E /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTypingIndicatorView.m; sourceTree = "<group>"; };
+		2A907E141F32CE8A00DF370E /* SLKUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKUIConstants.h; sourceTree = "<group>"; };
+		2A907E151F32CE8A00DF370E /* UIResponder+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SLKAdditions.h"; sourceTree = "<group>"; };
+		2A907E161F32CE8A00DF370E /* UIResponder+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SLKAdditions.m"; sourceTree = "<group>"; };
+		2A907E171F32CE8A00DF370E /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2A907E181F32CE8A00DF370E /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2A907E191F32CE8A00DF370E /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLKAdditions.h"; sourceTree = "<group>"; };
+		2A907E1A1F32CE8A00DF370E /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLKAdditions.m"; sourceTree = "<group>"; };
+		2A907E281F32CF2600DF370E /* SLKChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKChat.h; sourceTree = "<group>"; };
+		2A907E291F32CF7E00DF370E /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		2A907E301F32D06E00DF370E /* GSChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSChatCell.swift; sourceTree = "<group>"; };
+		2A907E311F32D06E00DF370E /* GSChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSChatCell.xib; sourceTree = "<group>"; };
+		2A907E461F32D89E00DF370E /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ChatViewController/Message.h; sourceTree = "<group>"; };
+		2A907E471F32D89E00DF370E /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ChatViewController/Message.m; sourceTree = "<group>"; };
+		2A907E481F32D89E00DF370E /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageTableViewCell.h; path = ChatViewController/MessageTableViewCell.h; sourceTree = "<group>"; };
+		2A907E491F32D89E00DF370E /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageTableViewCell.m; path = ChatViewController/MessageTableViewCell.m; sourceTree = "<group>"; };
+		2A907E4A1F32D89E00DF370E /* MessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageTextView.h; path = ChatViewController/MessageTextView.h; sourceTree = "<group>"; };
+		2A907E4B1F32D89E00DF370E /* MessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageTextView.m; path = ChatViewController/MessageTextView.m; sourceTree = "<group>"; };
+		2A907E4C1F32D89E00DF370E /* SLKMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLKMessenger.h; path = ChatViewController/SLKMessenger.h; sourceTree = "<group>"; };
+		2A907E4D1F32D89E00DF370E /* TypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypingIndicatorView.h; path = ChatViewController/TypingIndicatorView.h; sourceTree = "<group>"; };
+		2A907E4E1F32D89E00DF370E /* TypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypingIndicatorView.m; path = ChatViewController/TypingIndicatorView.m; sourceTree = "<group>"; };
+		2A907E531F32D8A800DF370E /* LoremIpsum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoremIpsum.h; path = ChatViewController/LoremIpsum.h; sourceTree = "<group>"; };
+		2A907E541F32D8A800DF370E /* LoremIpsum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoremIpsum.m; path = ChatViewController/LoremIpsum.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A907DE81F32CDF700DF370E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A907DE21F32CDF700DF370E = {
+			isa = PBXGroup;
+			children = (
+				2A907E2B1F32CF8F00DF370E /* vendors */,
+				2A907DED1F32CDF700DF370E /* ChatViewController */,
+				2A907DEC1F32CDF700DF370E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A907DEC1F32CDF700DF370E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A907DEB1F32CDF700DF370E /* ChatViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A907DED1F32CDF700DF370E /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A907E2D1F32CFC700DF370E /* required files (please ignore) */,
+				2A907E2C1F32CFAA00DF370E /* example */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		2A907E271F32CE9000DF370E /* SLKViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A907E281F32CF2600DF370E /* SLKChat.h */,
+				2A907E011F32CE8A00DF370E /* SLKInputAccessoryView.h */,
+				2A907E021F32CE8A00DF370E /* SLKInputAccessoryView.m */,
+				2A907E031F32CE8A00DF370E /* SLKTextInput.h */,
+				2A907E041F32CE8A00DF370E /* SLKTextInput+Implementation.m */,
+				2A907E051F32CE8A00DF370E /* SLKTextInputbar.h */,
+				2A907E061F32CE8A00DF370E /* SLKTextInputbar.m */,
+				2A907E071F32CE8A00DF370E /* SLKTextInputBarConfiguration.h */,
+				2A907E081F32CE8A00DF370E /* SLKTextInputBarConfiguration.m */,
+				2A907E091F32CE8A00DF370E /* SLKTextView.h */,
+				2A907E0A1F32CE8A00DF370E /* SLKTextView.m */,
+				2A907E0B1F32CE8A00DF370E /* SLKTextView+SLKAdditions.h */,
+				2A907E0C1F32CE8A00DF370E /* SLKTextView+SLKAdditions.m */,
+				2A907E0D1F32CE8A00DF370E /* SLKTextViewController.h */,
+				2A907E0E1F32CE8A00DF370E /* SLKTextViewController.m */,
+				2A907E0F1F32CE8A00DF370E /* SLKTextViewControllerConfiguration.h */,
+				2A907E101F32CE8A00DF370E /* SLKTextViewControllerConfiguration.m */,
+				2A907E111F32CE8A00DF370E /* SLKTypingIndicatorProtocol.h */,
+				2A907E121F32CE8A00DF370E /* SLKTypingIndicatorView.h */,
+				2A907E131F32CE8A00DF370E /* SLKTypingIndicatorView.m */,
+				2A907E141F32CE8A00DF370E /* SLKUIConstants.h */,
+				2A907E151F32CE8A00DF370E /* UIResponder+SLKAdditions.h */,
+				2A907E161F32CE8A00DF370E /* UIResponder+SLKAdditions.m */,
+				2A907E171F32CE8A00DF370E /* UIScrollView+SLKAdditions.h */,
+				2A907E181F32CE8A00DF370E /* UIScrollView+SLKAdditions.m */,
+				2A907E191F32CE8A00DF370E /* UIView+SLKAdditions.h */,
+				2A907E1A1F32CE8A00DF370E /* UIView+SLKAdditions.m */,
+			);
+			name = SLKViewController;
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		2A907E2B1F32CF8F00DF370E /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				2A907E451F32D17200DF370E /* LoremIpsum */,
+				2A907E401F32D0B300DF370E /* SLKMessenger */,
+				2A907E271F32CE9000DF370E /* SLKViewController */,
+			);
+			name = vendors;
+			sourceTree = "<group>";
+		};
+		2A907E2C1F32CFAA00DF370E /* example */ = {
+			isa = PBXGroup;
+			children = (
+				2A907DF51F32CDF700DF370E /* Assets.xcassets */,
+				2A907E001F32CE8A00DF370E /* ChatViewController-Bridging-Header.h */,
+				2A907DF21F32CDF700DF370E /* Main.storyboard */,
+				2A907E291F32CF7E00DF370E /* ChatVC.swift */,
+				2A907E301F32D06E00DF370E /* GSChatCell.swift */,
+				2A907E311F32D06E00DF370E /* GSChatCell.xib */,
+			);
+			name = example;
+			sourceTree = "<group>";
+		};
+		2A907E2D1F32CFC700DF370E /* required files (please ignore) */ = {
+			isa = PBXGroup;
+			children = (
+				2A907DEE1F32CDF700DF370E /* AppDelegate.swift */,
+				2A907DF01F32CDF700DF370E /* ViewController.swift */,
+				2A907DF71F32CDF700DF370E /* LaunchScreen.storyboard */,
+				2A907DFA1F32CDF700DF370E /* Info.plist */,
+			);
+			name = "required files (please ignore)";
+			sourceTree = "<group>";
+		};
+		2A907E401F32D0B300DF370E /* SLKMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				2A907E461F32D89E00DF370E /* Message.h */,
+				2A907E471F32D89E00DF370E /* Message.m */,
+				2A907E481F32D89E00DF370E /* MessageTableViewCell.h */,
+				2A907E491F32D89E00DF370E /* MessageTableViewCell.m */,
+				2A907E4A1F32D89E00DF370E /* MessageTextView.h */,
+				2A907E4B1F32D89E00DF370E /* MessageTextView.m */,
+				2A907E4C1F32D89E00DF370E /* SLKMessenger.h */,
+				2A907E4D1F32D89E00DF370E /* TypingIndicatorView.h */,
+				2A907E4E1F32D89E00DF370E /* TypingIndicatorView.m */,
+			);
+			name = SLKMessenger;
+			sourceTree = "<group>";
+		};
+		2A907E451F32D17200DF370E /* LoremIpsum */ = {
+			isa = PBXGroup;
+			children = (
+				2A907E531F32D8A800DF370E /* LoremIpsum.h */,
+				2A907E541F32D8A800DF370E /* LoremIpsum.m */,
+			);
+			name = LoremIpsum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A907DEA1F32CDF700DF370E /* ChatViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A907DFD1F32CDF700DF370E /* Build configuration list for PBXNativeTarget "ChatViewController" */;
+			buildPhases = (
+				2A907DE71F32CDF700DF370E /* Sources */,
+				2A907DE81F32CDF700DF370E /* Frameworks */,
+				2A907DE91F32CDF700DF370E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatViewController;
+			productName = ChatViewController;
+			productReference = 2A907DEB1F32CDF700DF370E /* ChatViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A907DE31F32CDF700DF370E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Joseph Daryl Locsin";
+				TargetAttributes = {
+					2A907DEA1F32CDF700DF370E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HDL9BK8SDE;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2A907DE61F32CDF700DF370E /* Build configuration list for PBXProject "ChatViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A907DE21F32CDF700DF370E;
+			productRefGroup = 2A907DEC1F32CDF700DF370E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A907DEA1F32CDF700DF370E /* ChatViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A907DE91F32CDF700DF370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A907DF91F32CDF700DF370E /* LaunchScreen.storyboard in Resources */,
+				2A907E331F32D06E00DF370E /* GSChatCell.xib in Resources */,
+				2A907DF61F32CDF700DF370E /* Assets.xcassets in Resources */,
+				2A907DF41F32CDF700DF370E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A907DE71F32CDF700DF370E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A907E1C1F32CE8A00DF370E /* SLKTextInput+Implementation.m in Sources */,
+				2A907E501F32D89E00DF370E /* MessageTableViewCell.m in Sources */,
+				2A907E241F32CE8A00DF370E /* UIResponder+SLKAdditions.m in Sources */,
+				2A907E211F32CE8A00DF370E /* SLKTextViewController.m in Sources */,
+				2A907E551F32D8A800DF370E /* LoremIpsum.m in Sources */,
+				2A907E321F32D06E00DF370E /* GSChatCell.swift in Sources */,
+				2A907E511F32D89E00DF370E /* MessageTextView.m in Sources */,
+				2A907DF11F32CDF700DF370E /* ViewController.swift in Sources */,
+				2A907E251F32CE8A00DF370E /* UIScrollView+SLKAdditions.m in Sources */,
+				2A907E4F1F32D89E00DF370E /* Message.m in Sources */,
+				2A907DEF1F32CDF700DF370E /* AppDelegate.swift in Sources */,
+				2A907E201F32CE8A00DF370E /* SLKTextView+SLKAdditions.m in Sources */,
+				2A907E1E1F32CE8A00DF370E /* SLKTextInputBarConfiguration.m in Sources */,
+				2A907E1F1F32CE8A00DF370E /* SLKTextView.m in Sources */,
+				2A907E2A1F32CF7E00DF370E /* ChatVC.swift in Sources */,
+				2A907E261F32CE8A00DF370E /* UIView+SLKAdditions.m in Sources */,
+				2A907E231F32CE8A00DF370E /* SLKTypingIndicatorView.m in Sources */,
+				2A907E221F32CE8A00DF370E /* SLKTextViewControllerConfiguration.m in Sources */,
+				2A907E521F32D89F00DF370E /* TypingIndicatorView.m in Sources */,
+				2A907E1B1F32CE8A00DF370E /* SLKInputAccessoryView.m in Sources */,
+				2A907E1D1F32CE8A00DF370E /* SLKTextInputbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A907DF21F32CDF700DF370E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A907DF31F32CDF700DF370E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A907DF71F32CDF700DF370E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A907DF81F32CDF700DF370E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A907DFB1F32CDF700DF370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A907DFC1F32CDF700DF370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A907DFE1F32CDF700DF370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HDL9BK8SDE;
+				INFOPLIST_FILE = ChatViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modernempire.ChatViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatViewController/ChatViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2A907DFF1F32CDF700DF370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HDL9BK8SDE;
+				INFOPLIST_FILE = ChatViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modernempire.ChatViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatViewController/ChatViewController-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A907DE61F32CDF700DF370E /* Build configuration list for PBXProject "ChatViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A907DFB1F32CDF700DF370E /* Debug */,
+				2A907DFC1F32CDF700DF370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A907DFD1F32CDF700DF370E /* Build configuration list for PBXNativeTarget "ChatViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A907DFE1F32CDF700DF370E /* Debug */,
+				2A907DFF1F32CDF700DF370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A907DE31F32CDF700DF370E /* Project object */;
+}
